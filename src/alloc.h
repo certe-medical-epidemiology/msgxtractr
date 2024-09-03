@@ -38,7 +38,8 @@ extern void free (void*);
 #endif /* STDC_HEADERS */
 
 extern void set_alloc_limit (size_t size);
-extern size_t get_alloc_limit();
+// extern size_t get_alloc_limit();
+extern size_t get_alloc_limit(void);
 extern void alloc_limit_assert (char *fn_name, size_t size);
 extern void* checked_xmalloc (size_t size);
 extern void* xmalloc (size_t size);

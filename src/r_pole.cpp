@@ -35,15 +35,14 @@ bool is_rtf(RawVector v) {
   static const unsigned int rtf_uncompressed_magic = 0x414c454d;
   static const unsigned int rtf_compressed_magic =   0x75465a4c;
 
-  size_t compr_size = 0L;
-  size_t uncompr_size = 0L;
   unsigned int magic;
   size_t idx = 0;
 
   unsigned char *data = (unsigned char *)(v.begin());
 
-  compr_size = get_int_32(data + idx); idx += 4;
-  uncompr_size = get_int_32(data + idx); idx += 4;
+  // size_t compr_size = get_int_32(data + idx); idx += 4;
+  // size_t uncompr_size = get_int_32(data + idx); idx += 4;
+  idx += 8;
   magic = get_int_32(data + idx); idx += 4;
 
   return((magic == rtf_uncompressed_magic) || (magic == rtf_compressed_magic));

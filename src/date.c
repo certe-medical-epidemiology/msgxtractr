@@ -43,16 +43,27 @@ dow_str(int dow)
     return day_of_week[dow];
 }
 
+// const char *
+// date_to_str (struct date *dt)
+// {
+//     static char buf[32];
+//     sprintf (buf, "%s %04d/%02d/%02d %02d:%02d:%02d",
+// 	     dow_str(dt->dow),
+// 	     dt->year, dt->month, dt->day,
+// 	     dt->hour, dt->min, dt->sec);
+//     return buf;
+// }
 const char *
-date_to_str (struct date *dt)
-{
+  date_to_str (struct date *dt)
+  {
     static char buf[32];
-    sprintf (buf, "%s %04d/%02d/%02d %02d:%02d:%02d",
-	     dow_str(dt->dow),
-	     dt->year, dt->month, dt->day,
-	     dt->hour, dt->min, dt->sec);
+    snprintf(buf, sizeof(buf), "%s %04d/%02d/%02d %02d:%02d:%02d",
+             dow_str(dt->dow),
+             dt->year, dt->month, dt->day,
+             dt->hour, dt->min, dt->sec);
     return buf;
-}
+  }
+
 
 void
 date_read (struct date *dt, const unsigned char *buf)

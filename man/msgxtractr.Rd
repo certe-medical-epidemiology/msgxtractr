@@ -2,6 +2,7 @@
 % Please edit documentation in R/msgxtractr-package.R
 \docType{package}
 \name{msgxtractr}
+\alias{msgxtractr-package}
 \alias{msgxtractr}
 \title{Read Outlook '.msg' Files}
 \description{
@@ -9,6 +10,15 @@
 enable extraction of metadata, envelope, headers, body and attachments from these
 files.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/certe-medical-epidemiology/msgxtractr}
+  \item Report bugs at \url{https://github.com/hrbrmstr/certe-medical-epidemiology/issues}
+}
+
+}
 \author{
 Bob Rudis (bob@rud.is)
 }
+\keyword{internal}

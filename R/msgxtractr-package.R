@@ -5,10 +5,10 @@
 #' files.
 #'
 #' @name msgxtractr
-#' @docType package
 #' @author Bob Rudis (bob@@rud.is)
 #' @importFrom scales comma
 #' @importFrom tibble as_tibble
 #' @useDynLib msgxtractr, .registration=TRUE
 #' @importFrom Rcpp sourceCpp
-NULL
+#' @keywords internal
+"_PACKAGE"

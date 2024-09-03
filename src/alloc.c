@@ -39,7 +39,7 @@ set_alloc_limit (size_t size)
 }
 
 size_t
-get_alloc_limit()
+get_alloc_limit(void)
 {
     return alloc_limit;
 }

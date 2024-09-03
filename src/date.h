@@ -47,4 +47,3 @@ extern void date_read (struct date *dt, const unsigned char *buf);
 }
 #endif
 #endif /* DATE_H */
-

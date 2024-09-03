@@ -36,4 +36,3 @@ extern void debug_print (const char *fmt, ...);
 }
 #endif
 #endif /* DEBUG_H */
-
