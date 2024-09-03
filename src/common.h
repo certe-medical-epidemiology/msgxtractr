@@ -19,13 +19,13 @@
  * Inc.; 59 Temple Place, Suite 330; Boston, MA 02111-1307, USA.
  *
  */
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 #ifndef COMMON_H
 #define COMMON_H 1
-
 
 #if HAVE_CONFIG_H
 #  include "config.h"
@@ -54,6 +54,7 @@ extern char *strcat (char *, const char *);
 extern void* memset (void* ptr, int c, size_t size);
 extern void* malloc (size_t size);
 extern void *memmove (void *, const void*, size_t);
+#endif
 
 #ifdef HAVE_SYS_STAT_H
 #  include <sys/stat.h>
@@ -83,15 +84,12 @@ typedef long           int32;
 typedef unsigned long  uint32;
 #endif /* SIZEOF_INT == 4 */
 
-/* ********** SIZES ********** */
-
 /* ********** REPLACED FUNCS ********** */
-#if !HAVE_DECL_BASENAME
+#if !defined(__linux__) && !HAVE_DECL_BASENAME
 extern char *basename (char *path);
 #endif
 
 /* ********** REPLACED FUNCS ********** */
-#endif
 
 #endif /* COMMON_H */
 
