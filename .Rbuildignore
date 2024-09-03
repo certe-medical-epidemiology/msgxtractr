@@ -13,3 +13,10 @@
 ^codecov\.yml$
 ^CONDUCT\.md$
 ^oldsrc$
+^\.github$
+^_pkgdown\.yml$
+^logo\.svg$
+^\.DS_Store$
+^data-raw$
+^pkgdown$
+^codecov.yml$
