@@ -1,7 +1,7 @@
 
 > 2024-09-02
 > 
-> Forked from hrbrmstr/msgxtractr
+> Forked from hrbrmstr/msgxtractr, see `NEWS.md`
 
 `msgxtractr` : Read Outlook ‘.msg’ Files
 

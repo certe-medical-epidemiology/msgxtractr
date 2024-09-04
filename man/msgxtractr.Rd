@@ -14,7 +14,7 @@ files.
 Useful links:
 \itemize{
   \item \url{https://github.com/certe-medical-epidemiology/msgxtractr}
-  \item Report bugs at \url{https://github.com/hrbrmstr/certe-medical-epidemiology/issues}
+  \item Report bugs at \url{https://github.com/certe-medical-epidemiology/msgxtractr/issues}
 }
 
 }

@@ -1,9 +1,7 @@
 # 0.3.0.*
-Modifications by non-profit organisation Certe, dept of Medical Epidemiology, after forking from `hrbrmstr/msgxtractr`.
+Modifications by @msberends from non-profit organisation Certe, dept of Medical Epidemiology, after forking from `hrbrmstr/msgxtractr`.
 
 ## Bug Fixes
-- Fixed issue with `iterator` class deprecation warnings.
-- Addressed `sprintf` usage to ensure safety with `snprintf`.
 - **C++ Standard Compliance**: Removed deprecated inheritance from `std::iterator` in the iterator class templates and replaced with explicit iterator traits. This resolves warnings related to deprecated declarations.
 - **Variable Usage**: Removed unused variables that were causing warnings (`prefix`, `compr_size`, `uncompr_size`). These variables were set but not used, leading to compiler warnings.
 - **Function Prototypes**: Updated function declarations to explicitly use `void` when no arguments are expected (e.g., `get_alloc_limit(void)`), resolving warnings about deprecated function declarations without prototypes.

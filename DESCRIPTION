@@ -1,33 +1,33 @@
 Package: msgxtractr
-Type: Package
 Title: Read Outlook '.msg' Files
-Version: 0.3.0.1
+Version: 0.3.0.2
 Authors@R: c(
-      person(given = c("Matthijs", "S."), 
-         family = "Berends",
-         role = c("aut"),
-         email = "m.berends@certe.nl"),
-      person("Bob", "Rudis", email = "bob@rud.is", role = c("cre")),
-      person("Ariya", "Hidayat", email = "ariya@kde.org", role = c("ctb", "cph"), comment = "POLE library"),
-      person("Nemanja", "Trifunovic", role = c("ctb", "cph"), comment = "UTF-8 helpers <https://github.com/nemtrif/utfcpp>")
-    )
+    person(given = c("Matthijs", "S."), 
+       family = "Berends",
+       role = c("aut"),
+       email = "m.berends@certe.nl"),
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("cre")),
+    person("Ariya", "Hidayat", email = "ariya@kde.org", role = c("ctb", "cph"), comment = "POLE library"),
+    person("Nemanja", "Trifunovic", role = c("ctb", "cph"), comment = "UTF-8 helpers <https://github.com/nemtrif/utfcpp>")
+  )
 Description: Forked from hrbrmstr/msgxtractr. 'Microsoft' 'Outlook' messages can be saved in '.msg' files.
-    Tools are provided that enable extraction of metadata, envelope, headers, body and attachments
-    from these files.
-URL: https://github.com/certe-medical-epidemiology/msgxtractr
-BugReports: https://github.com/hrbrmstr/certe-medical-epidemiology/issues
-NeedsCompilation: yes
-Encoding: UTF-8
-Copyright: file inst/COPYRIGHTS
-License: AGPL
-Suggests:
-    testthat,
-    covr
+  Tools are provided that enable extraction of metadata, envelope, headers, body and attachments
+  from these files.
 Depends:
-    R (>= 4.1.0)
+  R (>= 4.1.0)
 Imports:
-    Rcpp,
-    scales,
-    tibble
+  Rcpp,
+  scales,
+  tibble
+Suggests:
+  testthat,
+  covr
+LinkingTo:
+  Rcpp
+URL: https://github.com/certe-medical-epidemiology/msgxtractr
+BugReports: https://github.com/certe-medical-epidemiology/msgxtractr/issues
+License: AGPL
+Copyright: file inst/COPYRIGHTS
+Encoding: UTF-8
+NeedsCompilation: yes
 RoxygenNote: 7.3.2
-LinkingTo: Rcpp
